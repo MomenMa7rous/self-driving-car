@@ -9,7 +9,7 @@ uint16_t sensor_values[num_of_sensors];
 
 
 void setup() {
-  serial.begin(115200);
+  Serial.begin(115200);
   delay(500);
 
   qtr.setTypeRC();
@@ -25,7 +25,6 @@ void setup() {
 }
 
 
-}
 
 void loop() {
   uint16_t position = qtr.readLineBlack(sensor_values);
